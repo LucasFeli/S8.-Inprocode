@@ -14,10 +14,12 @@ export const ExpensesView = () => {
       <ExpensesChart />
       <div className="today-expense">
         <div className="expense-label">Despeses avui</div>
-        <div className="expense-amount"> €</div>
+        <div className="expense-amount">{todayExpense} €</div>
         <div className="percentage-change">
           <span>
-           
+            {percentageChange > 0
+              ? `+${percentageChange}%`
+              : `${percentageChange}%`}
           </span>
           <span> respecte a ahir</span>
         </div>
