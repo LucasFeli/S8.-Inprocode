@@ -1,9 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { store } from '../redux/store';
-import {PercentageChange} from '../components/PercentageChange';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
+import { PercentageChange } from "../components/PercentageChange";
 
-test('renders percentage change component with mock data', async () => {
+test("renders percentage change component with mock data", async () => {
   render(
     <Provider store={store}>
       <PercentageChange />

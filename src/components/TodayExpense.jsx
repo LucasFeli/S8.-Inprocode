@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { useSelector } from "react-redux";
 
 export const TodayExpense = () => {
@@ -6,5 +6,3 @@ export const TodayExpense = () => {
 
   return <div>Gasto de Hoy: {todayExpense} €</div>;
 };
-
-

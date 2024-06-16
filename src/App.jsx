@@ -1,14 +1,15 @@
-import { Balance } from "./components/Balance/Balance";
 import { TotalBalanceCard } from "./pages/TotalBalanceCard/TotalBalanceCard";
-import { ExpensesChart } from "./components/ExpensesChart";
 import { ExpensesView } from "./pages/ExpensesView/ExpensesView";
+import { LanguageSwitcher } from "./components/LanguageSwitcher/LanguageSwitcher";
 import "./App.css";
 
 function App() {
   return (
     <>
       <div>
-        
+        <header className="App-header">
+          <LanguageSwitcher />
+        </header>
         <TotalBalanceCard />
         <ExpensesView />
       </div>

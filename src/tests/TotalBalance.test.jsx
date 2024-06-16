@@ -1,10 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import { store } from '../redux/store';
-import React from 'react';
-import {TotalBalance} from '../components/TotalBalance';
+import { render, screen } from "@testing-library/react";
+import { Provider } from "react-redux";
+import { store } from "../redux/store";
+import React from "react";
+import { TotalBalance } from "../components/TotalBalance";
 
-test('renders total balance component with mock data', async () => {
+test("renders total balance component with mock data", async () => {
   render(
     <Provider store={store}>
       <TotalBalance />

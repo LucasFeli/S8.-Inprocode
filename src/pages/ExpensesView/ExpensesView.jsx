@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 import { ExpensesChart } from "../../components/ExpensesChart";
 import "./ExpensesView.css";
 
 export const ExpensesView = () => {
+  const { t } = useTranslation();
   const todayExpense = useSelector((state) => state.expenses.todayExpense);
   const percentageChange = useSelector(
     (state) => state.expenses.percentageChange
@@ -10,10 +12,10 @@ export const ExpensesView = () => {
 
   return (
     <div className="expenses-view">
-      <h2>Despeses - Última setmana</h2>
+      <h2>{t("weekly_expenses")}</h2>
       <ExpensesChart />
       <div className="today-expense">
-        <div className="expense-label">Despeses avui</div>
+        <div className="expense-label">{t("today_expenses")}</div>
         <div className="expense-amount">{todayExpense} €</div>
         <div className="percentage-change">
           <span>
@@ -21,7 +23,7 @@ export const ExpensesView = () => {
               ? `+${percentageChange}%`
               : `${percentageChange}%`}
           </span>
-          <span> respecte a ahir</span>
+          <span>{t("respect_yesterday")}</span>
         </div>
       </div>
     </div>
