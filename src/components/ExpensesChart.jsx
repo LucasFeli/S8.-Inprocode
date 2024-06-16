@@ -26,15 +26,18 @@ ChartJS.register(
 export const ExpensesChart = () => {
   const weeklyExpenses = useSelector((state) => state.expenses.weeklyExpenses);
 
+  const backgroundColors = weeklyExpenses.map((expense, index) =>
+    index === weeklyExpenses.length - 2 ? 'rgb(54, 162, 235)' : 'rgb(242, 125, 96)'
+  );
+
   const data = {
     labels: ['dl', 'dt', 'dc', 'dj', 'dv', 'ds', 'dg'],
     datasets: [
       {
         label: 'Despeses - Última setmana',
         data: weeklyExpenses,
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
-        borderWidth: 1,
+        backgroundColor: backgroundColors,
+       
       },
     ],
   };
