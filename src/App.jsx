@@ -1,4 +1,5 @@
 import { Balance } from "./components/Balance/Balance";
+import { TotalBalanceCard } from "./pages/TotalBalanceCard/TotalBalanceCard";
 import "./App.css";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div>
         <h1>Expense Tracker</h1>
+        <TotalBalanceCard/>
         <Balance />
         
       </div>

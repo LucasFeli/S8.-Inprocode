@@ -1,0 +1,57 @@
+.total-balance-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f27d60;
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: white;
+    font-family: Arial, sans-serif;
+    width: 500px; 
+   max-width: 600px;
+  }
+  
+  .balance-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .balance-label {
+    font-size: 14px;
+    color: white;
+    font-weight:500;
+    margin-left: -25px;
+  }
+  
+  .balance-amount {
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .balance-controls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .control-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .total-balance-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .balance-controls {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+  
