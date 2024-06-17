@@ -16,7 +16,7 @@ export const ExpensesView = () => {
       <ExpensesChart />
       <div className="today-expense">
         <div className="expense-label">{t("today_expenses")}</div>
-        <div className="expense-amount">{todayExpense} €</div>
+        <div className="expense-amount">{todayExpense} {t("currency")}</div>
         <div className="percentage-change">
           <span>
             {percentageChange > 0

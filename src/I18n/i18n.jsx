@@ -26,7 +26,7 @@ const resources = {
   ca: {
     translation: {
       'total_balance': 'Balanç total',
-      'weekly_expenses': 'Despeses - Última setmana',
+      'weekly_expenses': 'Despeses-Última setmana',
       'today_expenses': 'Despeses avui',
       'respect_yesterday': 'respecte a ahir',
       'currency': '€'
