@@ -11,7 +11,7 @@ export const TotalBalanceCard = () => {
     <div className="total-balance-card">
       <div className="balance-info">
         <span className="balance-label">{t("total_balance")}</span>
-        <span className="balance-amount">{totalBalance} €</span>
+        <span className="balance-amount">{totalBalance} {t("currency")}</span>
       </div>
       <div className="balance-controls">
         <button className="control-button">{"←"}</button>

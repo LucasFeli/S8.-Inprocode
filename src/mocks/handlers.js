@@ -1,7 +1,7 @@
 import { http  } from 'msw';
 
 export const handlers = [
-  http.get('/api/expenses', (req, res, ctx) => {
+  http.get('/api/expenses', (res, ctx) => {
     return res(
       ctx.json({
         totalBalance: 3323,
